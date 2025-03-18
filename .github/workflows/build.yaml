@@ -25,3 +25,4 @@ jobs:
         with:
           image: nightlighthv:latest
           options: -v ${{ github.workspace }}:/build
+          run: sh aports/scripts/mkimage.sh --outdir /build --tag main --arch x86_64 --repository https://dl-cdn.alpinelinux.org/alpine/v3.21/main --repository https://dl-cdn.alpinelinux.org/alpine/v3.21/community --profile nightlight
