@@ -20,6 +20,7 @@ jobs:
           file: ./Dockerfile
           push: false
           tags: nightlighthv:latest
+          load: true
       - uses: addnab/docker-run-action@v3
         with:
           image: nightlighthv:latest
